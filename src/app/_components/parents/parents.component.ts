@@ -14,7 +14,14 @@ export class ParentsComponent implements OnInit {
   constructor(private service : EmployeeService) { }
   xyzProperty: any[]= [];
   ngOnInit(): void {
-    this.service.getdata();
+    this.service.firstApiCall().subscribe(
+      (res:any)=> {
+        console.log(res);
+      },(error:any)=>{
+        console.log('error',error);
+      }
+    )
+    
     this.childComponent?.passGiftToParent();
     this.property = [
       {cost: 1, name: 'House'},
