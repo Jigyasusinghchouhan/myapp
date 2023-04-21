@@ -8,7 +8,7 @@ export class EmployeeService {
   getDataAPIURL: string='https://jsonplaceholder.typicode.com/posts'
   constructor(private http: HttpClient) { }
   getdata(b: number){
-   this.http.get(this.getDataAPIURL)
+   this.http.get(this.getDataAPIURL).pipe();
    if (b<2){
     console.log("number is neither prime nor composite");
    }
@@ -19,5 +19,10 @@ export class EmployeeService {
    }
   
     console.log('Number is prime');
+  }
+
+  firstApiCall() {
+  return  this.http.get(this.getDataAPIURL)
+    .pipe()
   }
 }
