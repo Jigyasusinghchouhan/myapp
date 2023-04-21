@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ChildComponent } from './_components/child/child.component';
 import { ParentsComponent } from './_components/parents/parents.component';
 import { EmployeeService } from './services/employee.service';
+import {HttpClientModule}  from '@angular/common/http'
 
 @NgModule({
   declarations: [
