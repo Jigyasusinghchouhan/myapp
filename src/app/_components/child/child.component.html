@@ -1,0 +1,26 @@
+<!-- <div class="col-sm-12">
+    <button class="btn btn-primary" (click)="saveChange()">Submit</button>
+    <div class="col-sm-3" [ngStyle]="{display: showTable ? 'block': 'none'}">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Age</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let itm of employeeList">
+           <td><input type="text" [(ngModel)]="itm.name" /></td>
+           <td><input type="date" [(ngModel)]="itm.DOB" /></td>
+           <td><input type="number" [(ngModel)]="itm.age" /></td>
+           <td><input type="text" [(ngModel)]="itm.address" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> -->
+
+  <button class="btn btn-primary" 
+  (click)="passGiftToParent()">Pass Gift To Parent</button>
